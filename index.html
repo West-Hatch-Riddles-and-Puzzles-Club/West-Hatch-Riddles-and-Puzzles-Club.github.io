@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="google-site-verification" content="gn2afR1zx2-SyECBO6FBwALMliYrTkjOZbcQai8TQeo" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Hatch Riddle and Puzzle Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <meta name="google-site-verification" content="gn2afR1zx2-SyECBO6FBwALMliYrTkjOZbcQai8TQeo" />
+    <div class="min-h-screen bg-background">
+        <!-- Navigation -->
+        <nav class="border-b border-border">
+            <div class="container mx-auto px-4">
+                <div class="flex h-16 items-center justify-between">
+                    <h1 class="text-2xl font-bold">West Hatch Riddle and Puzzle Club</h1>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="flex items-center gap-1" id="mobile-menu">
+                        <a href="index.html" class="nav-link active"><i class="fas fa-puzzle-piece"></i> Home</a>
+                        <a href="about.html" class="nav-link"><i class="fas fa-info-circle"></i> About</a>
+                        <a href="events.html" class="nav-link"><i class="fas fa-calendar"></i> Events</a>
+                        <a href="team.html" class="nav-link"><i class="fas fa-users"></i> Team</a>
+                        <a href="blog.html" class="nav-link"><i class="fas fa-book"></i> Blog</a>
+                        <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="py-12 bg-muted">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 text-center-mobile">
+                        <h1 class="text-3xl font-bold mb-4">Welcome to the West Hatch Riddle and Puzzle Club</h1>
+                        <p class="text-lg mb-6">
+                            Unlock your mind with challenging puzzles, brain teasers, and riddles. Join our community of puzzle enthusiasts!
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <a href="events.html" class="btn btn-primary">Upcoming Events</a>
+                            <a href="about.html" class="btn btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <div class="card p-8 text-center">
+                            <h2 class="text-xl font-semibold mb-4">This week's riddle:</h2>
+                            <p class="mb-4 text-lg italic">
+                                "I'm light as a feather, yet the strongest person cannot hold me for more than a few minutes. What am I?"
+                            </p>
+                            <p class="text-primary hover-underline cursor-pointer" onclick="toggleAnswer()">Reveal Answer</p>
+                            <p id="riddle-answer" class="mt-2 hidden">Breath</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="container mx-auto p-8">
+            <h2 class="text-2xl font-bold mb-8 text-center">Why Join Our Club?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="feature-card">
+                    <i class="fas fa-brain text-primary"></i>
+                    <div>
+                        <h3 class="font-semibold">Develop Critical Thinking</h3>
+                        <p class="text-muted">Enhance your problem-solving abilities through challenging puzzles.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-users text-primary"></i>
+                    <div>
+                        <h3 class="font-semibold">Build Friendships</h3>
+                        <p class="text-muted">Connect with like-minded students who share your passion for puzzles.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-trophy text-primary"></i>
+                    <div>
+                        <h3 class="font-semibold">Compete in Contests</h3>
+                        <p class="text-muted">Participate in puzzle competitions and test your skills.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lightbulb text-primary"></i>
+                    <div>
+                        <h3 class="font-semibold">Discover New Puzzles</h3>
+                        <p class="text-muted">Explore a wide variety of puzzle types from around the world.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upcoming Events Preview -->
+        <div class="bg-muted py-12">
+            <div class="container mx-auto px-4">
+                <h2 class="text-2xl font-bold mb-8 text-center">Upcoming Events</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-2">Escape Room Challenge</h3>
+                        <p class="text-muted mb-4">Sign up now! Work as a team to solve puzzles and escape the room.</p>
+                        <div class="flex gap-4 text-sm">
+                            <span><i class="far fa-calendar"></i> May 15, 2024</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-2">Puzzle Tournament</h3>
+                        <p class="text-muted mb-4">Compete in a variety of puzzle challenges including Sudoku, logic puzzles, and word games.</p>
+                        <div class="flex gap-4 text-sm">
+                            <span><i class="far fa-calendar"></i> February 3, 2025</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <a href="events.html" class="btn btn-primary">View All Events</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('show');
+        }
+        
+        function toggleAnswer() {
+            const answer = document.getElementById('riddle-answer');
+            answer.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>

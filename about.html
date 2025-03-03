@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - West Hatch Riddle and Puzzle Club</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen bg-background">
+        <!-- Navigation -->
+        <nav class="border-b border-border">
+            <div class="container mx-auto px-4">
+                <div class="flex h-16 items-center justify-between">
+                    <h1 class="text-2xl font-bold">West Hatch Riddle and Puzzle Club</h1>
+                    <div class="hamburger" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="flex items-center gap-1" id="mobile-menu">
+                        <a href="index.html" class="nav-link"><i class="fas fa-puzzle-piece"></i> Home</a>
+                        <a href="about.html" class="nav-link active"><i class="fas fa-info-circle"></i> About</a>
+                        <a href="events.html" class="nav-link"><i class="fas fa-calendar"></i> Events</a>
+                        <a href="team.html" class="nav-link"><i class="fas fa-users"></i> Team</a>
+                        <a href="blog.html" class="nav-link"><i class="fas fa-book"></i> Blog</a>
+                        <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="container mx-auto p-8">
+            <div class="max-w-3xl mx-auto space-y-8">
+                <h1 class="text-3xl font-bold mb-6">About Our Club</h1>
+
+                <p class="text-lg mb-8">
+                    The West Hatch Riddle and Puzzle Club is a community for students who enjoy challenging their minds with 
+                    puzzles, brain teasers, riddles, and logical problems. We foster critical thinking, problem-solving skills, 
+                    and teamwork through fun puzzling activities.
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 my-8">
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-2">Our Mission</h3>
+                        <p class="text-muted">
+                            To create an engaging environment where students can develop critical thinking and problem-solving
+                            skills through puzzles and riddles, while building friendships and having fun in the process.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3 class="text-xl font-semibold mb-2">Our Vision</h3>
+                        <p class="text-muted">
+                            To become a hub of intellectual creativity at West Hatch, where students can explore the fascinating 
+                            world of puzzles and expand their mental capabilities while enjoying the thrill of solving challenges.
+                        </p>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-4">What We Do</h2>
+                
+                <div class="space-y-6">
+                    <div class="feature-card">
+                        <i class="fas fa-brain text-primary"></i>
+                        <div>
+                            <h3 class="font-semibold">Puzzle Workshops</h3>
+                            <p class="text-muted">Regular meetings to solve and discuss various types of puzzles and brain teasers.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-trophy text-primary"></i>
+                        <div>
+                            <h3 class="font-semibold">Competitions</h3>
+                            <p class="text-muted">Participate in local and national puzzle competitions as a team.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-key text-primary"></i>
+                        <div>
+                            <h3 class="font-semibold">Escape Room Adventures</h3>
+                            <p class="text-muted">Organize and participate in escape room challenges that test problem-solving skills.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <i class="fas fa-puzzle-piece text-primary"></i>
+                        <div>
+                            <h3 class="font-semibold">Puzzle Creation</h3>
+                            <p class="text-muted">Learn to design and create your own puzzles, riddles, and brain teasers.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2 class="text-2xl font-bold mb-4 mt-8">Join Us</h2>
+                <p class="mb-6">
+                    The West Hatch Riddle and Puzzle Club welcomes students of all levels who enjoy mental challenges.
+                    Whether you're a seasoned puzzler or just curious about riddles, we'd love to have you join us!
+                </p>
+                
+                <a href="contact.html" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
